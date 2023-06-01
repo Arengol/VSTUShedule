@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GreetingFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vstu_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.SemiBold.24"
+        android:text="Для продолжения работы необходимо пройти авторизацию"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/student_sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/cobalt_blue"
+        android:text="Я студент"
+        android:textAppearance="@style/Text.Regular.18"/>
+
+    <Button
+        android:id="@+id/mentor_sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/cobalt_blue"
+        android:text="Я преподаватель"
+        android:textAppearance="@style/Text.Regular.18"/>
+
+    <Button
+        android:id="@+id/greeting_log_in_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="55dp"
+        android:backgroundTint="@color/cobalt_blue"
+        android:text="У меня уже есть аккаунт"
+        android:textAppearance="@style/Text.Regular.18"/>
+</LinearLayout>

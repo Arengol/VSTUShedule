@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="38dp"
+        android:textAppearance="@style/Text.SemiBold.24"
+        android:text="Регистрация"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_in_login_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Логин"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        style="@style/DefaultTextLayout"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_in_login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            style="@style/DefaultInputText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_in_password_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:errorEnabled="true"
+        android:hint="Пароль"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_password_selector"
+        style="@style/DefaultTextLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_in_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            style="@style/DefaultInputText"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_in_second_password_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:errorEnabled="true"
+        android:hint="Повторите пароль"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_password_selector"
+        style="@style/DefaultTextLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_in_second_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            style="@style/DefaultInputText"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/invite_code_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Код приглашения"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        style="@style/DefaultTextLayout"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/invite_code_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            style="@style/DefaultInputText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="55dp"
+        android:backgroundTint="@color/cobalt_blue"
+        android:text="Войти"
+        android:textAppearance="@style/Text.Regular.18"/>
+
+</LinearLayout>

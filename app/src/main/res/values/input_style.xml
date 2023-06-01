@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultTextLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="errorTextColor">@color/red_text</item>
+        <item name="boxStrokeErrorColor">@color/red_text</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorTextAppearance">@style/Text.Regular.12</item>
+        <item name="boxBackgroundColor">@color/gray_text_field</item>
+        <item name="hintTextColor">@color/gray_text</item>
+        <item name="android:textColorHint">@color/gray_text</item>
+        <item name="boxStrokeColor">@color/gray_stroke</item>
+    </style>
+
+    <style name="DefaultInputText">
+        <item name="android:textAppearance">@style/Text.Medium.16</item>
+    </style>
+</resources>

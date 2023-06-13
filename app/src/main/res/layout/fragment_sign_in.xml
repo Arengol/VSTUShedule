@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignInFragment">
+    tools:context=".performance.fragment.SignInFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -17,10 +17,28 @@
         android:text="Регистрация"/>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/account_link_data_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        style="@style/DefaultTextLayout"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/account_link_data_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/sign_in_login_til"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="Логин"
@@ -92,6 +110,7 @@
         app:errorEnabled="true"
         app:errorIconDrawable="@null"
         style="@style/DefaultTextLayout"
+        android:visibility="invisible"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/invite_code_tv"
@@ -104,13 +123,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/sign_in_button"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="200dp"
         android:layout_marginStart="55dp"
         android:backgroundTint="@color/cobalt_blue"
-        android:text="Войти"
+        android:text="Зарегистрироваться"
         android:textAppearance="@style/Text.Regular.18"/>
 
 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginFragment">
+    tools:context=".performance.fragment.LoginFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -61,7 +61,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/log_in_button"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="385dp"
